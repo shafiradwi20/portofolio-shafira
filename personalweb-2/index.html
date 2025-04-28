@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome for social media icons and navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shafira Dwi Nur'Izzati - Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo with animation -->
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Shafira Dwi <span>Nur'Izzati</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="links">
+                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="service.html">Service</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="contact.html">Contact</a></div>
+            </div>
+        </div>
+
+        <!-- Hamburger Menu Icon for mobile view -->
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+        <!-- Dropdown Menu for Mobile -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="main-container">
+            <!-- Content Container -->
+            <div class="content">
+                <!-- Heading with animation -->
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Shafira</span>
+                </h1>
+
+                <!-- Typewriter Effect -->
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm a <span
+                        class="typewriter-text"></span><label for="">|</label></div>
+
+                <!-- Personal description paragraph -->
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a fifth semester student at Stmik Tegal, majoring in Information Systems. Throughout my studies, I have gained strong foundational knowledge in system analysis, database management, and web development. Although I have not participated in student organizations or internships, I have been focusing on building my skills through coursework and personal projects, particularly in software development, data analysis, and information system design. I am eager to further enhance my knowledge and apply my technical skills in real-world projects.</p>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shafira-dwi-709925329/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/shafiradwi20" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/15mmcZ7fgq/?mibextid=wwXIfr" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/shafiraadni" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="btn" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="downloadCV()">Download CV</button>
+                </div>
+            </div>
+
+            <!-- Profile Image Container -->
+            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="img/shafira.PNG" alt="Shafira Dwi Nur'Izzati">
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Imports -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS library
+        AOS.init({ offset: 0 });
+
+        // Function to handle CV download
+        function downloadCV() {
+            // Replace with your actual CV file path
+            window.location.href = "img/shafira_CV.pdf";
+        }
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
